@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/object_list_bg"
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout
+        android:id="@+id/object_title"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/lightgreen" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal|center"
+            android:text="@string/object"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/searchRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/object_title"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" >
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/search_edittextstyle"
+            android:drawableLeft="@drawable/icon_search"
+            android:drawablePadding="10dp"
+            android:ems="20"
+            android:hint="@string/hint_search"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="16sp" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/objectListRelative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchRelative"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/object_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:divider="@color/object_list_divider"
+            android:dividerHeight="1sp"
+            android:focusableInTouchMode="true" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

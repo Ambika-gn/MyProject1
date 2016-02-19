@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="530dp"
+    android:layout_height="530dp"
+    android:layout_gravity="center" >
+
+    <RelativeLayout
+        android:id="@+id/library_child_title"
+        android:layout_width="530dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/lightgreen" >
+
+        <TextView
+            android:id="@+id/library_child_title_text"
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center|center_horizontal"
+            android:paddingTop="5dp"
+            android:text="@string/text_library"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/btn_library_child_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:contentDescription="@string/content"
+            android:src="@drawable/btn_close" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/selectedLibraryChildObject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/library_child_title"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal|center"
+        android:text="name"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/object_library_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectedLibraryChildObject"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/table_border"
+        android:divider="@android:color/transparent" >
+    </ListView>
+
+</RelativeLayout>

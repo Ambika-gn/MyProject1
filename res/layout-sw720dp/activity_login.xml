@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/logingreen_bg"
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout
+        android:id="@+id/login_title"
+        android:layout_width="560dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center|center_horizontal"
+            android:paddingTop="5dp"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="560dp"
+        android:layout_height="534dp"
+        android:layout_alignLeft="@+id/login_title"
+        android:layout_below="@+id/login_title"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
+
+        <ImageView
+            android:id="@+id/logo_object"
+            android:layout_width="209dp"
+            android:layout_height="110dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/content"
+            android:src="@drawable/logo_objects" />
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/logo_object"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/user"
+            android:textColor="@color/enter_color"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/userValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/user"
+            android:layout_below="@+id/user"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/user"
+            android:layout_below="@+id/userValue"
+            android:layout_marginTop="10dp"
+            android:text="@string/password"
+            android:textColor="@color/enter_color"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/passwordValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/password"
+            android:layout_below="@+id/password"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/instance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/password"
+            android:layout_below="@+id/passwordValue"
+            android:layout_marginTop="10dp"
+            android:text="@string/instance"
+            android:textColor="@color/enter_color"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/instanceValue"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/instance"
+            android:layout_below="@+id/instance"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingRight="10dp" />
+
+        <ImageView
+            android:id="@+id/btn_pickerview"
+            android:layout_width="38dp"
+            android:layout_height="34dp"
+            android:layout_alignBottom="@+id/instanceValue"
+            android:layout_alignRight="@+id/passwordValue"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/instanceValue"
+            android:background="@drawable/btn_pickerview"
+            android:contentDescription="@string/content" />
+
+        <ImageView
+            android:id="@+id/logo_smartrac"
+            android:layout_width="135dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/btn_enter"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/content"
+            android:src="@drawable/logo_smartrac" />
+
+        <TextView
+            android:id="@+id/btn_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/btn_pickerview"
+            android:layout_below="@+id/instanceValue"
+            android:layout_marginTop="16dp"
+            android:text="@string/enter"
+            android:textColor="@color/enter_color"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/instancelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparentBlack"
+        android:visibility="gone" >
+    </FrameLayout>
+
+</RelativeLayout>

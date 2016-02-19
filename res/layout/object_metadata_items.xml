@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/table_metadata"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/table_border" >
+
+    <TableRow
+        android:id="@+id/metadata_row1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/metadata_key"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:text="@string/key"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/metadata_keyValue"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:text="value"
+            android:textSize="16sp" />
+    </TableRow>
+
+    <View
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/silver" />
+
+    <TableRow
+        android:id="@+id/metadata_row2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/metadata_datatype"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:text="@string/datatype"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/metadata_datatypeValue"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:text="value"
+            android:textSize="16sp" />
+    </TableRow>
+
+    <View
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/silver" />
+
+    <TableRow
+        android:id="@+id/metadata_row3"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/metadata_value"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:text="@string/value"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/metadata_valueValue"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:text="value"
+            android:textSize="16sp" />
+    </TableRow>
+
+</TableLayout>

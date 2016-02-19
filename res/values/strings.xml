@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SMARTRACObjects</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- User Login Screen -->
+    <string name="user">User</string>
+    <string name="password">Password</string>
+    <string name="instance">INSTANCE</string>
+    <string name="enter">ENTER</string>
+    <string name="content"></string>
+
+    <!-- Info Screen -->
+    <string name="creation_timestamp">Creation Timestamp</string>
+    <string name="urn">URN</string>
+    <!-- Email Screen -->
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_send">Send</string>
+    <string name="email_title">OBJECTS-Feedback</string>
+    <string name="emailTo">To:</string>
+    <string name="emailCcorBcc">Cc:Bcc</string>
+    <string name="emailSend">Share Feedback Using</string>
+
+    <!-- Profile Screen -->
+    <string name="tutorial">Tutorial</string>
+    <string name="tutorial_desc">Get into Objects tutorial and make the most of your app.</string>
+    <string name="feedback">Feedback</string>
+    <string name="feedback_desc">Your opinion is important, Please help us to keep improving.</string>
+    <string name="about">About</string>
+    <string name="about_desc">Get more info about Objects App and its use and terms.</string>
+    <string name="close_session">Close Session</string>
+    <string name="close_desc">Tap to switch instances or simply to close the current session.</string>
+    <string name="feedback_selected1">What are we doing well?</string>
+    <string name="feedback_selected2">What should we improve?</string>
+
+    <!-- Screen Titles -->
+    <string name="login">LOGIN</string>
+    <string name="object">Objects</string>
+    <string name="profile">Profile</string>
+    <string name="metadata">Metadata</string>
+    <string name="files">Files</string>
+    <string name="address">Address</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="done">Done</string>
+
+    <!-- Error popup -->
+    <string name="error_login_title">Login Error</string>
+    <string name="tutorial_na">Not Available</string>
+    <string name="tutorial_na_desc">This feature will be available soon</string>
+    <string name="error_login_desc">Invalid Username/Password</string>
+    <string name="error_popup_title">Network Error</string>
+    <string name="error_popup_desc">Internet connection appears to be offline</string>
+    <string name="accept">Accept</string>
+    <string name="empty_list_title">No Data found</string>
+    <string name="empty_list_desc">Object list is Empty</string>
+    <string name="empty_file_title">No Files found</string>
+    <string name="empty_file_desc">This Object does not have any Files associated</string>
+    <string name="empty_metadata_title">No Metadata found</string>
+    <string name="empty_metadata_desc">This Object does not have any Metadata associated</string>
+    <string name="empty_geospatial_title">No Geospatial found</string>
+    <string name="empty_geospatial_desc">This Object does not have any Geospatial associated</string>
+    <string name="empty_relationshpis_title">No Relationships found</string>
+    <string name="empty_relationshpis_desc">This Object does not have any Relationships associated</string>
+    <string name="empty_interactions_title">No Interactions found</string>
+    <string name="empty_interactions_desc">This Object does not have any Interactions associated</string>
+    <string name="empty_hashtags_title">No HashTags found</string>
+    <string name="empty_hashtags_desc">This Object does not have any HashTags associated</string>
+    <string name="empty_address_title">No Address found</string>
+    <string name="empty_address_desc">This Object does not have any Address associated</string>
+    <string name="empty_library_title">No Library found</string>
+    <string name="empty_library_desc">This Object does not have any Library associated</string>
+    <string name="empty_timeline_title">No Timeline found</string>
+    <string name="empty_timeline_desc">This Object does not have any Timeline associated</string>
+
+    <!-- Objects Screen -->
+    <string name="hint_search">Search Object</string>
+    <string name="hint_search_files">Search Files</string>
+    <string name="hint_search_library">Search Library</string>
+    <string name="hint_search_address">Search Address</string>
+    <string name="hint_search_timeline">Search Timeline</string>
+    <string name="text_relationships">Relationships</string>
+    <string name="text_files">Files</string>
+    <string name="text_timeline">Timeline</string>
+    <string name="text_address">Address</string>
+    <string name="text_libraries">Libraries</string>
+    <string name="text_hashtags">Hashtags</string>
+    <string name="text_library">Library</string>
+    <string name="text_geospatial">Geospatial</string>
+    <string name="text_inreactions">Interactions</string>
+    <string name="text_metadata">Metadata</string>
+   
+
+    <!-- Metadata  Screen -->
+
+    <string name="key">Key</string>
+    <string name="datatype">Data type</string>
+    <string name="value">Value</string>
+
+    <!-- Geospatial  Screen -->
+    <string name="copy_json">Copy JSON</string>
+
+</resources>

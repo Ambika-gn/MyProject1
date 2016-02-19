@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="530dp"
+    android:layout_height="530dp"
+    android:layout_gravity="center"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/files_title"
+        android:layout_width="530dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/lightgreen" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center|center_horizontal"
+            android:paddingTop="5dp"
+            android:text="@string/files"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/btn_files_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="26dp"
+            android:contentDescription="@string/content"
+            android:src="@drawable/btn_close" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/files_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/files_title"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" >
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/search_edittextstyle"
+            android:drawableLeft="@drawable/icon_search"
+            android:drawablePadding="10dp"
+            android:ems="20"
+            android:hint="@string/hint_search_files"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textSize="16sp" >
+        </EditText>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/object_files_list"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/files_search"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/table_border"
+        android:divider="@android:color/transparent" >
+    </ListView>
+
+</RelativeLayout>

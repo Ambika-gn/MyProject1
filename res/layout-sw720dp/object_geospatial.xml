@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="530dp"
+    android:layout_height="530dp"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/geospatial_title"
+        android:layout_width="530dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/lightgreen" >
+
+        <TextView
+            android:id="@+id/text_geospatial"
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center|center_horizontal"
+            android:paddingTop="5dp"
+            android:text="@string/text_geospatial"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/btn_geospatial_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="28dp"
+            android:contentDescription="@string/content"
+            android:src="@drawable/btn_close" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/selectedGeospatialObject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/geospatial_title"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal|center"
+        android:text="name"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/object_geospatial_json"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/selectedGeospatialObject"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:maxLines="5000"
+        android:scrollbars="vertical"
+        android:textIsSelectable="true" >
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/copy_json"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@drawable/textview_border" >
+
+        <TextView
+            android:id="@+id/copy_json_value"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center|center_horizontal"
+            android:paddingTop="5dp"
+            android:text="@string/copy_json"
+            android:textColor="@color/lightgreen"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relationship_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/relationships_main_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/lightBlue" >
+
+        <TextView
+            android:id="@+id/relations_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/icon_relationships_relationship"
+            android:paddingTop="5dp"
+            android:text="title"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/icon_relationships_relationship"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:contentDescription="@string/content"
+            android:src="@drawable/icon_relationships" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/relationship_main_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relationships_main_title"
+        android:layout_marginLeft="20dp" >
+    </ListView>
+
+    <View
+        android:id="@+id/listDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dip"
+        android:layout_below="@+id/relationship_main_list"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/silver" />
+
+    <TextView
+        android:id="@+id/relations_main_center"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/listDivider"
+        android:layout_marginLeft="20dp"
+        android:text="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+</RelativeLayout>
